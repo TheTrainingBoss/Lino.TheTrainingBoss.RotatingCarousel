@@ -1,6 +1,8 @@
 # Lino.TheTrainingBoss.RotatingCarousel
 This is a sample Sitefinity MVC widget to show how to build one in an external assembly and assign a new icon for it in the Sitefinity Designer
 
+![](./VideoGIF/LinoDoh400.jpg)
+
 How to install it in your site?
 -------------------------------
 The only file you need is the assembly file **Lino.TheTrainingBoss.RotatingCarousel.dll**  
