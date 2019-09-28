@@ -40,6 +40,6 @@ If you are interested in the source code, it is a pretty straight forward widget
 @Html.StyleSheet(Url.EmbeddedResource("RotatingCarousel.Mvc.Models.RotatingImageCarouselModel",
     "Lino.TheTrainingBoss.RotatingCarousel.Css.main.css"))
 ```
-The first part could be ANY class inside on your assembly, I chose here for it to be the model, but it could have been the controller, if I wanted to.  The second part needs to be the Type namesapce path to the css file.
+The first part could be ANY class inside on your assembly, I chose here for it to be the model, but it could have been the controller, if I wanted to.  The second part needs to be the Type namespace path to the css file.
 
 Enjoy, modify, use, add to it and have fun!
