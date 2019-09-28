@@ -1,0 +1,26 @@
+@model RotatingCarousel.Mvc.Models.RotatingImageCarouselModel
+
+@using System.Web.Mvc;
+@using Telerik.Sitefinity.Frontend.Mvc.Helpers;
+@using Telerik.Sitefinity.Modules.Pages;
+@using Telerik.Sitefinity.UI.MVC;
+@using Telerik.Sitefinity.Services;
+
+@Html.StyleSheet(Url.EmbeddedResource("RotatingCarousel.Mvc.Models.RotatingImageCarouselModel",
+    "Lino.TheTrainingBoss.RotatingCarousel.Css.main.css"))
+
+@if (!SystemManager.IsDesignMode)
+{
+    @Html.Script(ScriptRef.JQuery, "head", true)
+}
+
+<h1>RotatingSlides</h1>
+<br>
+<div class="Rcontainer">
+    <div id="carousel">
+        @foreach (var item in Model.RotatingSlides)
+        {
+            <figure><img src="@item.ImageUrl"></figure>
+        }
+    </div>
+</div>

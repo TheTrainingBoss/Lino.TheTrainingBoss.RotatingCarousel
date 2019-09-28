@@ -1,0 +1,105 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Anaheim);
+
+* {
+    /*margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box*/
+}
+
+    *:before,
+    *:after {
+        box-sizing: border-box
+    }
+
+.Rcontainer {
+    margin: 4% auto;
+    width: 210px;
+    height: 210px;
+    position: relative;
+    perspective: 1000px
+}
+
+#carousel {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    animation: rotation 20s infinite linear
+}
+
+    #carousel:hover {
+        animation-play-state: paused
+    }
+
+    #carousel figure {
+        display: block;
+        position: absolute;
+        width: 90%;
+        height: 50%;
+        left: 10px;
+        top: 10px;
+        background: black;
+        overflow: hidden;
+        border: solid 3px black
+    }
+
+        #carousel figure:nth-child(1) {
+            transform: rotateY(0deg) translateZ(288px)
+        }
+
+        #carousel figure:nth-child(2) {
+            transform: rotateY(40deg) translateZ(288px)
+        }
+
+        #carousel figure:nth-child(3) {
+            transform: rotateY(80deg) translateZ(288px)
+        }
+
+        #carousel figure:nth-child(4) {
+            transform: rotateY(120deg) translateZ(288px)
+        }
+
+        #carousel figure:nth-child(5) {
+            transform: rotateY(160deg) translateZ(288px)
+        }
+
+        #carousel figure:nth-child(6) {
+            transform: rotateY(200deg) translateZ(288px)
+        }
+
+        #carousel figure:nth-child(7) {
+            transform: rotateY(240deg) translateZ(288px)
+        }
+
+        #carousel figure:nth-child(8) {
+            transform: rotateY(280deg) translateZ(288px)
+        }
+
+        #carousel figure:nth-child(9) {
+            transform: rotateY(320deg) translateZ(288px)
+        }
+
+img:hover {
+    -webkit-filter: grayscale(0);
+    transform: scale(1.2, 1.2)
+}
+
+@keyframes rotation {
+    from {
+        transform: rotateY(0deg)
+    }
+
+    to {
+        transform: rotateY(360deg)
+    }
+}
+
+.RotatingCarouselIcon {
+    background: url('data:image/jpeg;base64,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') no-repeat !important;
+    -ms-background-size: 50px !important;
+    -moz-background-size: 50px !important;
+    -o-background-size: 50px !important;
+    background-size: 50px !important;
+}
