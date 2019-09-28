@@ -10,4 +10,5 @@ I placed this assembly here in the repository in case you just want to use it ri
 Place that file in your bin folder of your Sitefinity site (currently it is compiled against 12.1.7100)  if you have a different version of Sitefinity just add Assembly Binding Dependencies in your Web.Config file to get it to work.
 Or better yet, open the project in Visual Studio and upgrade or downgrade the NuGet packages to meet your sitefinity version needs.
 
+![](./VideoGIF/RotatingCarousel.gif)
 
