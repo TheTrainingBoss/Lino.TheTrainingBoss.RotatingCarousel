@@ -29,7 +29,7 @@ If you are interested in the source code, it is a pretty straight forward widget
         CssClass = "RotatingCarouselIcon sfMvcIcn")]
 ```
 - The sfMvcIcn part is the little blue icon that shows up in the bottom right corner of each MVC widget.
-- The AssemblyInfo.cs file under properties needs to have the **ControllerContainer** assembly directive declared to allow Sitefinity to know that the assembly has widgets in it. You also need to decalre the WebResource of where your css file is located in the assembly to allow your 50x30 icon of the widget in the designer to be found.
+- The AssemblyInfo.cs file under properties needs to have the **ControllerContainer** assembly directive declared to allow Sitefinity to know that the assembly has widgets in it. You also need to declare the WebResource of where your css file is located in the assembly to allow your 50x30 icon of the widget in the designer to be found.
 ```
 [assembly: ControllerContainer()]
 [assembly: WebResource("Lino.TheTrainingBoss.RotatingCarousel.Css.main.css", 
